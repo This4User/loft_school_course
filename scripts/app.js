@@ -1,7 +1,7 @@
 const openingBtn = document.querySelector('.sidebar__hamburger');
 const closingBtn = document.querySelector('.sidebar__close');
 const sidebar = document.querySelector('.sidebar');
-slides = document.querySelectorAll('.fade-slider__item');
+const slides = document.querySelectorAll('.fade-slider__item');
 
 const openSidebar = () => {
     sidebar.classList.toggle('sidebar--opened');

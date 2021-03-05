@@ -28,6 +28,141 @@ body{
     position: relative;
     margin-bottom: 130px;
 }
+.card-container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    height: 670px;
+    width: 1102px;
+    border: 10px solid #ffbc2f;
+}
+.card-container__shirt-place{
+    height: 100%;
+    width: 537px;
+    background: #ffbc2f;
+}
+.card-container__about-shirt-place{
+    display: flex;
+    flex-direction: column;
+}
+.shirt-customize__size{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.card-container__shirt-name{
+    margin-left: 20px;
+}
+.company{
+    font-size: 20px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: #ffbc2f;
+}
+.name{
+    margin-top: -25px;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+.price{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    background: #ffbc2f;
+    color: #212121;
+    width: 96px;
+    height: 46px;
+    font-size: 40px;
+}
+.card-container__shirt-about-text{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 25px;
+    color: #212121;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.shirt-customize__size-square:hover{
+    background: #ffbc2f;
+    border-color: #ffbc2f;
+}
+.shirt-customize__size-square{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 51px;
+    width: 51px;
+    border: #737373 solid 2px;
+    color: #212121;
+    font-size: 20px;
+    text-align: center;
+    margin-right: 15px;
+    transition: 0.3s;
+}
+.shirt-customize__size-square:hover{
+    background: #ffbc2f;
+    border-color: #ffbc2f;
+    cursor: pointer;
+}
+.shirt-customize__size-square--active{
+    background: #ffbc2f;
+    border-color: #ffbc2f;
+}
+.shirt-customize__size-square--sold-out{
+    opacity: 70%;
+    color: #737373;
+    pointer-events: none;
+}
+.shirt-customize__color{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+    margin-left: 20px;
+    margin-top: 25px;
+}
+.shirt-customize__color-circle{
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+    background: #ffbc2f;
+    border: solid 2px #E0D9C8;
+    border-radius: 100%;
+}
+.shirt-customize__color-circle:hover{
+    border: #ffbc2f 3px solid;
+}
+.shirt-customize__color-circle--active{
+    border: #ffbc2f 3px solid;
+}
+.shirt-customize__color-circle:nth-last-child(1){
+    background: #2F2C25;
+}
+.shirt-customize__color-circle:nth-last-child(2){
+    background: #FCF5E6;
+}
+.shirt-customize__color-circle:nth-last-child(3){
+    background: #529029;
+}
+.shirt-customize__color-circle:nth-last-child(4){
+    background: #39498D;
+}
+.shirt-customize__color-circle:nth-last-child(5){
+    background: #D82727;
+}
+.shirt-customize .btn{
+    margin-top: 30px;
+    margin-left: 20px;
+    padding: 10px 80px;
+}
+.hero--product-card{
+    background: none;
+}
 .hero__content{
     position: absolute;
     top: 50%;
@@ -35,6 +170,9 @@ body{
     transform: translate(-50%,-50%);
     width: 1140px;
     height: 72%;
+}
+.hero__content--product-card{
+    height: 100%;
 }
 .sidebar{
     width: 75px;
@@ -152,6 +290,24 @@ body{
     justify-content: space-between;
     align-items: center;
     padding-top: 20px;
+}
+.header__sales{
+    width: 516px;
+    height: 160px;
+    overflow: hidden;
+}
+.header__sales .fade-slider__text{
+    top: 50px;
+    right: 950px;
+}
+.header__sales .lined-text{
+    font-size: 24px;
+}
+.header--product-card{
+    width: 100%;
+    padding-left: 115px;
+    padding-right: 115px;
+    background: url("img/bg/hero.jpg") center center /cover no-repeat;
 }
 .mail{
     text-decoration: none;
