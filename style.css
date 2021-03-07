@@ -31,16 +31,27 @@ body{
 .card-container{
     display: flex;
     flex-direction: row;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 60px;
+    margin-bottom: 20px;
     height: 670px;
     width: 1102px;
     border: 10px solid #ffbc2f;
 }
 .card-container__shirt-place{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100%;
     width: 537px;
     background: #ffbc2f;
+}
+.card-container__shirt{
+    height: 445px;
+    width: 495px;
+    display: none;
+}
+.card-container__shirt--active{
+    display: block;
 }
 .card-container__about-shirt-place{
     display: flex;
@@ -162,6 +173,7 @@ body{
 }
 .hero--product-card{
     background: none;
+    margin-bottom: 40px;
 }
 .hero__content{
     position: absolute;
@@ -173,6 +185,34 @@ body{
 }
 .hero__content--product-card{
     height: 100%;
+}
+.about{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about_washing{
+    display: flex;
+    align-items: center;
+    width: 1102px;
+    height: 299px;
+    box-sizing: border-box;
+    border: solid 5px #ffbc2f;
+    margin-top: -40px;
+    margin-bottom: 70px;
+}
+.about_washing__rules{
+    margin-left: 40px;
+}
+.about_washing__materials{
+    width: 602px;
+    height: 100%;
+    margin-left: 60px;
+    margin-top: 140px;
+}
+.about_washing__rules li{
+    margin-bottom: 10px;
 }
 .sidebar{
     width: 75px;
